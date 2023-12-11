@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução javaScript</title>
+</head>
+<body>
+    
+    <!--
+    <h1>introdução</h1>
+    <script> alert("olá!");</script>
+    <script> prompt("qual o seu nome");</script>
+    <script> var nome = prompt("qual o seu nome");
+            console.log(nome);
+    </script>
+
+    <script>
+        alert("primeiro conteudo");
+        alert("segundo conteudo");
+
+        console.log("primeiro conteúdo no console");
+        console.log("segundo conteúdo no console");
+
+      
+    </script>
+    !-->
+
+<!--<script>
+    var quantidade = 1;
+    var nome = "fox";
+    var decimal = 1.34;
+
+    console.log(typeof quantidade);
+    console.log(typeof nome);
+    console.log(typeof decimal);
+
+    var verdadeiro = true;
+    console.log(typeof verdadeiro);
+    
+
+</script>
+-->
+
+<!--<script>
+    var numero = '12.46';
+    numero = parseFloat(numero);
+    var outroNumero='2';
+    outroNumero= parseInt(outroNumero);
+    var resultado = numero + outroNumero
+    
+    window.document.write("tipo de dados "+ outroNumero+ " = "+ typeof (outroNumero)+"<BR>" );
+    window.document.write("resultado"+resultado );
+</script>-->
+    
+<!--<script>
+    var numero= 12;
+    numero = numero.toString();
+    var outroNumero=2.2;
+    outroNumero=outroNumero.toString();
+    var resultado = numero + outroNumero
+    
+    window.document.write("tipo de dados "+ numero+ " = "+ typeof (numero));
+    window.document.write("tipo de dados "+ outroNumero+ " = "+ typeof (outroNumero));
+    window.document.write("resultado"+resultado );
+
+
+</script>
+<script>
+        var diferente= (1!=1);
+    console.log(diferente);
+
+
+    var verdadeiro= (1!=2);
+    console.log(verdadeiro);
+
+</script>-->
+
+<!--<script>
+    var salarioMensal= 1000;
+    var salarioanual= 13*salarioMensal+salarioMensal*0.10;
+    console.log (salarioanual);
+</script>-->
+
+<!--<script>
+    var divisor = 0;
+    var dividendo =1;
+
+    if(divisor!=0){
+        var resultado = dividendo/divisor;
+        console.log(resultado);
+
+    }else{
+        console.log("nao posso executar uma divisão por 0 !")
+    }
+</script>-->
+<!--
+<script>
+    var tipoDeFuncionario = "estagiario";
+    var salarioMensal=700;
+
+    if (tipoDeFuncionario == "estagiario" ||tipoDeFuncionario == "clt"){
+        if(salarioMensal>0 && salarioMensal<1000){
+            var salarioanual= 13*salarioMensal+salarioMensal*0.05;
+            console.log (salarioanual);
+
+        }else{
+            if(salarioMensal<2000){
+                var salarioanual= 13* salarioMensal+salarioMensal*0.10;
+                console.log(salarioanual);
+            }
+        }
+    }
+</script>
+-->
+
+<!--<script>
+    var dia;
+    switch (new Date() .getDay()){
+        case 0 :
+            dia = "domingo"; break;
+        case 1 :
+            dia = "segunda"; break;
+        case 2:
+            dia = "terça"; break;
+        case 3:
+            dia = "quarta"; break;
+        case 4: 
+            dia ="quinta"; break;
+        case 5:
+            dia = "sexta"; break;
+        case 6:
+            dia = "sabado"; break;
+        case 7: 
+            dia = "domingo"; break;
+    }
+
+    console.log("hoje é "+ dia);
+</script>
+-->
+<!--<p id="demo"></p>
+
+
+<script>
+const carro = ["Fiat", "Volvo", "BMW"];
+for (var i =0; i<carro.length;i++){
+    document.write(carro[i]+ "<br>");
+}
+document.getElementById("demo").innerHTML = carro;
+</script>
+
+<script>
+    var txt = "";
+    var pessoa = {fname:"Jhon"+"<br>",name: "José"+"<br>",idade: 25+"<br>" };
+    for (var x in pessoa){
+        txt= txt+ " " + pessoa [x] ;
+        
+    }
+    window.document.write (txt);
+</script>
+-->
+
+<script>
+    var somapares = 0;
+    var i = 1;
+
+while (true){
+    if (i % 2 != 0)
+
+window.document.write(" Valor de i: "+i+"<br>"+"<br>");
+    
+    window.document.write(" Valor da soma: "+(somapares += i)+"<br>"+"<br>" );
+        if (i== 10)
+    break;
+   
+    i++;
+    window.document.write("i incrementado: "+ i+"<br>"+"<br>"+"<br>");
+}
+</script>
+
+</body>
+</html>

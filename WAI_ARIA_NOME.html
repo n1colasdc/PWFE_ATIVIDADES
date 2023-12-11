@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="MenuButton"> Menu </button>
+    <div id="Menu" aria-hidden="true">
+        <label for="produtos">Selecione um produto: </label>
+        <select id="produtos" aria-label="selecione o produto">
+            <option value="1">notebook</option>
+            <option value="2">celular</option>
+            <option value="3">som</option>
+        </select>
+
+
+        <p id="descricao-produto">notebook i9 450hz</p>
+    </div>
+
+   
+   
+    <style>
+         #MenuButton{
+            background-color: aqua;
+            border-radius: 15px;
+            border: none;
+            width: 150px;
+            height: 3 0px;
+            transition: all ease-in-out 0.2s;
+         }
+         
+         #MenuButton:hover{
+            background-color: rgb(0, 191, 191);
+         }
+
+        #MenuButton[aria-expanded = "true"]::after{
+            content: "+";
+        }
+        #MenuButton[aria-expanded = "false"]::after{
+            content: "-";
+        }
+        #Menu[aria-hidden="true"]{
+            display: none;
+
+        }
+        #Menu[aria-hidden="false"]{
+            display: block;
+        }
+
+    [aria-label]{
+        border: 2px solid blue;
+    }
+
+    </style>
+
+<script>
+    const MenuButton = document.getElementById("MenuButton");
+    const Menu = document.getElementById("Menu");
+    MenuButton.addEventListener("click",()=>{
+        const expand = MenuButton.getAttribute("aria-expanded") === "true";
+        MenuButton.setAttribute("aria-expanded",!expand);
+        Menu.setAttribute("aria-hidden", expand);
+        
+    });
+</script>
+</body>
+</html>
